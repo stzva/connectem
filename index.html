@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta encoding="utf8">
+  <title>Connectem</title>
+  <style>
+  .dot,
+  .line {
+    width: 60px;
+    height: 60px;
+    float: left;
+  }
+  
+  .dot {
+    border-radius: 30px;    
+  }
+
+  .p1 {
+    background-color: #e5e680;
+  }
+
+  .p2 {
+    background-color: #73a773;
+  }
+  
+  .dot.p1 + .dot.p1,
+  .dot.p1:first-child,
+  .dot.p2 + .dot.p1
+  {
+    margin-left: 60px;
+  }
+
+  .p1 + .p2, .p2 + .p1 {
+    clear: left;
+  }
+  
+  .horizontal {
+    width: 60px;
+    height: 4px;
+    margin: 28px 0;
+  }
+  
+  .vertical {
+    width: 4px;
+    height: 60px;
+    margin: 0 28px;
+  }
+
+  #board {
+    width: 450px;
+    margin: 0 auto;
+  }
+  </style>
+  <script>
+
+  </script>
+</head>
+<body>
+  <div id="board">
+    <div class="dot p1"></div>
+    <div class="dot p1"></div>
+    <div class="dot p1"></div>
+    <div class="dot p2"></div>
+    <div class="line"></div>
+    <div class="dot p2"></div>
+    <div class="line"><div class="horizontal p2"></div></div>
+    <div class="dot p2"></div>
+    <div class="line"></div>
+    <div class="dot p2"></div>
+    <div class="dot p1"></div>
+    <div class="line"></div>
+    <div class="dot p1"></div>
+    <div class="line"></div>
+    <div class="dot p1"></div>
+    <div class="dot p2"></div>
+    <div class="line"><div class="vertical p1"></div></div>
+    <div class="dot p2"></div>
+    <div class="line"></div>
+    <div class="dot p2"></div>
+    <div class="line"></div>
+    <div class="dot p2"></div>
+    <div class="dot p1"></div>
+    <div class="line"></div>
+    <div class="dot p1"></div>
+    <div class="line"></div>
+    <div class="dot p1"></div>
+    <div class="dot p2"></div>
+    <div class="line"></div>
+    <div class="dot p2"></div>
+    <div class="line"></div>
+    <div class="dot p2"></div>
+    <div class="line"></div>
+    <div class="dot p2"></div>
+    <div class="dot p1"></div>
+    <div class="dot p1"></div>
+    <div class="dot p1"></div>
+  </div>
+</body>
+</html>
