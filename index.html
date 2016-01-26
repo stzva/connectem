@@ -22,7 +22,7 @@
         }
         
         .p1 {
-            background-color: #e5e680;
+            background-color: rgb(193, 104, 77);
         }
         
         .p2 {
@@ -35,21 +35,23 @@
             margin-left: 60px;
         }
         
-        .p1 + .p2,
-        .p2 + .p1 {
+        .dot.p1 + .dot.p2,
+        .dot.p2 + .dot.p1 {
             clear: left;
         }
         
         .horizontal {
             width: 60px;
-            height: 4px;
+            height: 8px;
             margin: 28px 0;
+            display: none;
         }
         
         .vertical {
-            width: 4px;
+            width: 8px;
             height: 60px;
             margin: 0 28px;
+            display: none;
         }
         
         .p2.highlighted {
@@ -58,6 +60,34 @@
         
         .p1.highlighted {
             background-color: mistyrose;
+        }
+        
+        #board.p1 .line.inner:not(.taken) .horizontal,
+        #board.p1 .line.outer:not(.taken) .vertical {
+            background-color: rgba(193, 104, 77, 0.2);
+            display: block;
+        }
+        
+        #board.p2 .line.outer:not(.taken) .horizontal,
+        #board.p2 .line.inner:not(.taken) .vertical {
+            background-color: rgba(115, 167, 115, 0.2);
+            display: block;
+        }
+        
+        #board.p1 .line.inner:not(.taken):hover .horizontal,
+        #board.p1 .line.outer:not(.taken):hover .vertical,
+        .line.inner.taken .p1.horizontal,
+        .line.outer.taken .p1.vertical {
+            background-color: rgb(193, 104, 77);
+            display: block;
+        }
+        
+        #board.p2 .line.outer:not(.taken):hover .horizontal,
+        #board.p2 .line.inner:not(.taken):hover .vertical,
+        .line.inner.taken .p2.vertical,
+        .line.outer.taken .p2.horizontal {
+            background-color: #73a773;
+            display: block;
         }
         
         #board {
